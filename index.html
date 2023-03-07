@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>GeekForGeeks Survey Form</h1>
+
+    <form action="#" method="get">
+      <div id="DivName">
+        <label for="name" id="name">Name</label><br>
+        <input
+          type="text"
+          name="name"
+          class="name"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div id="DivEmail">
+        <label for="email" id="email">Email</label><br>
+        <input
+          type="email"
+          name="email"
+          class="email"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div id="DivAge">
+        <label for="age" id="age">Age</label><br>
+        <input
+          type="number"
+          name="age"
+          class="age"
+          placeholder="Enter your age"
+        />
+      </div>
+
+      <div id="DivDescribes">
+        <label for="describes" id="describes"
+          >Which option best describes you?</label
+        ><br>
+        <select class="describes" name="describes">
+          <option value="Student">Student</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+          <option value="Master">Master</option>
+        </select>
+      </div>
+
+      <div id="DivRadio">
+        <h3>Would you recommend GeekForGeeks to a friend</h3>
+
+        <input type="radio" class="yes" name="yes" value="yes" />
+        <label for="yes" id="yes">yes</label><br />
+        <input type="radio" class="no" name="no" value="no" />
+        <label for="no" id="no">no</label><br />
+        <input type="radio" class="maybe" name="maybe" value="maybe" />
+        <label for="maybe">maybe</label>
+      </div>
+
+      <div id="Checkbox">
+        <h3>Languages and frameworks known(Check all that apply)</h3>
+
+        <input type="checkbox" id="C" name="C" value="C" />
+        <label for="C" class="check">C</label><br>
+        <input type="checkbox" id="C++" name="C++" value="C++" />
+        <label for="C++">C++</label><br>
+        <input type="checkbox" id="C#" name="C#" value="C#" />
+        <label for="C#">C#</label> <br>
+        <input type="checkbox" name="Java" id="Java" value="Java">
+        <label for="Java">Java</label><br>
+        <input type="checkbox" name="Python" id="Python" value="Python">
+        <label for="Python">Python</label><br>
+        <input type="checkbox" name="JavaScript" id="JavaScript" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+        <input type="checkbox" name="React" id="React" value="React">
+        <label for="React">React</label><br>
+        <input type="checkbox" name="Angular" id="Angular" value="Angular">
+        <label for="Angular">Angular</label><br>
+        <input type="checkbox" name="Django" id="Django" value="Django">
+        <label for="Django">Django</label><br>
+        <input type="checkbox" name="Spring" id="Spring" value="Spring">
+        <label for="Spring">Spring</label><br>
+      </div>
+
+      <div id="TextContainer">
+        <label for="suggestions">Any comments or suggestions</label><br>
+        <textarea name="suggestions" id="suggestions"></textarea>
+      </div>
+
+      <div id="DivButton">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
